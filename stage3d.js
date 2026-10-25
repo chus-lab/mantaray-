@@ -10,9 +10,9 @@ import * as THREE from 'three';
 import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js';
 import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
 import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
-import {createAbyss} from '../shared/abyss/abyss-env.js';
-import {mountPanel} from '../shared/abyss/abyss-panel.js';
-import {SURFACE,ABSORB,NOISE,SUN,CAUSTICS} from '../shared/abyss/abyss-glsl.js';
+import {createAbyss} from './shared/abyss/abyss-env.js';
+import {mountPanel} from './shared/abyss/abyss-panel.js';
+import {SURFACE,ABSORB,NOISE,SUN,CAUSTICS} from './shared/abyss/abyss-glsl.js';
 
 const D=16,FOV=50,BASE=new THREE.Vector3(0,-20,0);
 // The stage draws into its own canvas, placed behind the 2D overlay (#ocean) with the same full-window, letterboxed layout.
